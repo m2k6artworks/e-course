@@ -120,7 +120,7 @@ header {
     z-index: 2;
 }
 
-/* @-webkit-keyframes up-down {
+@-webkit-keyframes up-down {
     0% {
       transform: translateY(10px);
     }
@@ -137,7 +137,8 @@ header {
       transform: translateY(-10px);
     }
   }  
-
+  
+/* 
 .carousel-item {
     height: 350px;
     background: #F6F6F8;
