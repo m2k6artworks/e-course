@@ -18,7 +18,7 @@ document.onreadystatechange = () => {
                 autoplay: true,
                 controls: false,
                 autoplayHoverPause: true,
-                autoplayTimeout: 5000,
+                autoplayTimeout: 3000,
                 autoplayButtonOutput: false,
                 nav: true,
                 slideBy: 1,
@@ -185,7 +185,6 @@ document.onreadystatechange = () => {
                 })
             }
 
-            // use value of search field to filter
             const searchInput = document.querySelector('#searchInput');
 
             if(searchInput) {
@@ -195,19 +194,18 @@ document.onreadystatechange = () => {
                 }, 200 ) );
             }
 
-            // debounce so filtering doesn't happen every millisecond
             function debounce( fn, threshold ) {
-            var timeout;
-            threshold = threshold || 100;
-            return function debounced() {
-                clearTimeout( timeout );
-                var args = arguments;
-                var _this = this;
-                function delayed() {
-                fn.apply( _this, args );
-                }
-                timeout = setTimeout( delayed, threshold );
-            };
+                var timeout;
+                threshold = threshold || 100;
+                return function debounced() {
+                    clearTimeout( timeout );
+                    var args = arguments;
+                    var _this = this;
+                    function delayed() {
+                    fn.apply( _this, args );
+                    }
+                    timeout = setTimeout( delayed, threshold );
+                };
             }
 
                             

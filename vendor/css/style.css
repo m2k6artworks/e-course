@@ -9,6 +9,22 @@ i {
     font-size: 1.3rem;
 }
 
+svg path {
+    transition: ease-in .2s;
+}
+
+.link-danger:hover svg path {
+    fill: rgb(240, 0, 0);
+}
+
+.link-secondary:hover svg path {
+    fill: rgb(66, 63, 253);
+}
+
+.link-warning:hover svg path {
+    fill: rgb(255, 109, 56);
+}
+
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
     background-color: #4a4bc7;
