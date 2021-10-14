@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="vendor/bootstrap-5/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/css/style.css">
     <link rel="shortcut icon" href="src/images/logo-circle.png" type="image/x-icon">
-    <link rel="stylesheet" href="vendor/line-awesome/css/line-awesome.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="vendor/tiny-slider/tiny-slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -680,13 +680,17 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 d-flex flex-wrap justify-content-start align-items-center"> <a href="#" class="link-secondary text-decoration-none me-3">Show more</a>
+            <div class="col-12 d-flex flex-wrap justify-content-end align-items-center mb-4">
+                <div class="col-auto me-3"> 
+                    <strong> <span id="currentSlide">0</span> / <span id="endSlide">0</span> </strong> 
+                </div>
                 <div class="col-auto">
-                    <button class="btn btn-light text-primary" style="-webkit-clip-path: circle();clip-path: circle();"> <i class="fas fa-arrow-left fs-6"></i> </button> 
-                    <strong class="mx-2"> 
-                        <span id="currentSlide">1</span> / <span id="endSlide">2</span> 
-                    </strong>
-                    <button class="btn btn-primary" style="-webkit-clip-path: circle();clip-path: circle();"> <i class="fas fa-arrow-right fs-6"></i> </button>
+                    <button id="testimoniesLeftArrow" class="btn" style="-webkit-clip-path: circle();clip-path: circle();">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="testimoniesRightArrow" class="btn" style="-webkit-clip-path: circle();clip-path: circle();">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </div>
