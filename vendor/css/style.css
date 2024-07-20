@@ -321,7 +321,53 @@ header {
         width: inherit;
     }
 }
+/* 
+.form-contact-us .form-label {
+    color: rgb(66, 63, 253);
+}
 
+.form-contact-us input, .form-contact-us textarea {
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(66, 63, 253, 0.2);
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form-contact-us .form-button {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+} */
+
+.form-contact-us .form-label {
+    color: black;
+    transition: color 0.3s ease;
+}
+.form-contact-us input:focus + .form-label, 
+.form-contact-us textarea:focus + .form-label {
+    color: rgb(66, 63, 253);
+    font-weight: 700;
+}
+.form-contact-us input, .form-contact-us textarea {
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(66, 63, 253, 0.2);
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 1rem;
+    margin: 3rem 0;
+}
+.form-contact-us .form-button {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.form-contact-us .label-position {
+    position: absolute;
+    top: -30px;
+    left: 0;
+}
 /* @media (min-width: 576px) {
     .img-section {
         width: 50%;
