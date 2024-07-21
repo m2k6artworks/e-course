@@ -12,17 +12,19 @@ document.onreadystatechange = () => {
         const togglePlayButton = document.getElementById("music-toggle");
         const togglePlayIcon = document.getElementById("toggle-icon");
 
-        togglePlayButton.addEventListener("click", function() {
-            if (audio.paused) {
-                audio.play();
-                togglePlayIcon.classList.remove("fa-play");
-                togglePlayIcon.classList.add("fa-pause");
-            } else {
-                audio.pause();
-                togglePlayIcon.classList.remove("fa-pause");
-                togglePlayIcon.classList.add("fa-play");
-            }
-        });
+        if(togglePlayButton) {
+            togglePlayButton.addEventListener("click", function() {
+                if (audio.paused) {
+                    audio.play();
+                    togglePlayIcon.classList.remove("fa-play");
+                    togglePlayIcon.classList.add("fa-pause");
+                } else {
+                    audio.pause();
+                    togglePlayIcon.classList.remove("fa-pause");
+                    togglePlayIcon.classList.add("fa-play");
+                }
+            });
+        }
         
         const courseHero = document.querySelector("#courseHero")
 
