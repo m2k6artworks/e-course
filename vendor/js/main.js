@@ -11,14 +11,14 @@ document.onreadystatechange = () => {
     const togglePlayButton = document.getElementById("music-toggle");
     const togglePlayIcon = document.getElementById("toggle-icon");
 
-    const playlist = document.querySelectorAll('#playlist a')
+    const playlist = document.querySelectorAll("#playlist a");
     if (playlist) {
       playlist.forEach((test) => {
-          test.addEventListener("click", (e) => {
-              e.preventDefault();
-              document.querySelector("iframe").src = test.href
-          })
-      })
+        test.addEventListener("click", (e) => {
+          e.preventDefault();
+          document.querySelector("iframe").src = test.href;
+        });
+      });
     }
 
     if (togglePlayButton) {
