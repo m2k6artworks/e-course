@@ -11,6 +11,16 @@ document.onreadystatechange = () => {
     const togglePlayButton = document.getElementById("music-toggle");
     const togglePlayIcon = document.getElementById("toggle-icon");
 
+    const testing = document.querySelectorAll('#playlist a')
+    if (testing) {
+      testing.forEach((test) => {
+          test.addEventListener("click", (e) => {
+              e.preventDefault();
+              document.querySelector("iframe").src = test.href
+          })
+      })
+    }
+
     if (togglePlayButton) {
       togglePlayButton.addEventListener("click", function () {
         if (audio.paused) {
