@@ -387,6 +387,17 @@ header {
     top: -30px;
     left: 0;
 }
+
+.lg-item img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+#masonry-gallery-demo .col-sm-6, #masonry-gallery-demo .col-md-3 {
+    padding: 5px;
+  }
+
 /* @media (min-width: 576px) {
     .img-section {
         width: 50%;
