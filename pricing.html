@@ -15,6 +15,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <style>
+        .pricing-table th,
+        .pricing-table td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .pricing-table th {
+            background-color: #f8f9fa;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .pricing-table .plan-header {
+            font-size: 1.5rem;
+            background-color: #f8f9fa;
+        }
+
+        .pricing-table .plan-header span {
+            display: block;
+            font-size: 1rem;
+        }
+
+        .pricing-table .plan-price {
+            font-size: 2.5rem;
+        }
+
+        .pricing-table .plan-price span {
+            color: #dbdbdb;
+            font-size: 1rem;
+        }
+
+        .pricing-table .feature-check {
+            color: green;
+            font-size: 1.5rem;
+        }
+
+        .pricing-table .feature-cross {
+            color: red;
+            font-size: 1.5rem;
+        }
+
+        .pricing-table tbody tr td:nth-child(1) {
+            text-align: left;
+        }
+
+        .bg-primary2 {
+            background-color: #7677f1 !important;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
@@ -82,8 +133,8 @@
     <div class="bg-light py-5 px-3 px-sm-0 col-12">
         <div class="container d-flex flex-wrap justify-content-center px-0">
             <div class="col-12 d-flex flex-wrap justify-content-center text-center">
-                <h1 class="text-primary col-12">Harga untuk segala kalangan</h1>
-                <p class="col-12" style="font-size: .9rem;color: #828282;">Harga dibuat agar semua kalangan dapat menikmati Kyulearn</p>
+                <h1 class="text-primary col-12">Affordable price</h1>
+                <p class="col-12" style="font-size: .9rem;color: #828282;">Choose our plans that suitable for your needs</p>
                 <ul class="nav nav-pills btn btn-light rounded-pill mb-3 p-0" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link rounded-pill py-3 px-5 active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true" style="font-size: .9rem;">Monthly</button>
@@ -94,148 +145,166 @@
                 </ul>
                 <div class="tab-content col-12" id="pills-tabContent">
                     <div class="tab-pane fade active show" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                        <div class="row pt-2">
-                            <div class="col-12 col-sm-6 col-lg-3 px-lg-0 mb-4">
-                                <div class="card h-100 border-0 bg-white" style="border-radius: 15px;">
-                                    <div class="card-body p-4 text-start d-flex flex-wrap">
-                                        <h4 class="card-title mb-2 w-100" style="font-size: 2rem;font-weight: 600;">
-                                            Beginner
-                                        </h4>
-                                        <p class="card-text mb-4 w-100" style="font-size: .875rem;">For beginner student that want to learn basic</p>
-                                        <div class="row align-items-center mb-3">
-                                            <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Access class in 30 days</div>
-                                            <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Facilitator</div>
-                                            <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Forum</div>
-                                        </div>
-                                        <h4 style="font-size: 2.5rem;" class="mb-4">$10<span class="fs-6" style="color: #757575;">/month</span></h4>
-                                        <button class="btn btn-outline-primary btn-lg rounded-pill fs-6 col-12 mt-auto">Select Plan</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-3 px-lg-0 mb-4">
-                                <div class="card h-100 border-0 bg-white" style="border-radius: 15px;">
-                                    <div class="card-body p-4 text-start d-flex flex-wrap">
-                                        <h4 class="card-title mb-2 w-100" style="font-size: 2rem;font-weight: 600;">Advanced</h4>
-                                        <p class="card-text mb-4 w-100" style="font-size: .875rem;">For beginner student that want to learn basic</p>
-                                        <div class="row align-items-center mb-3">
-                                            <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Access class in 30 days</div>
-                                            <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Facilitator</div>
-                                            <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Forum</div>
-                                            <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Merch</div>
-                                        </div>
-                                        <h4 style="font-size: 2.5rem;" class="mb-4">$15<span class="fs-6" style="color: #757575;">/month</span></h4>
-                                        <button class="btn btn-outline-primary btn-lg rounded-pill fs-6 col-12 mt-auto">Select Plan</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-3 px-lg-0 mb-4">
-                                <div class="card h-100 border-0 bg-primary text-white" style="border-radius: 15px;box-shadow: 0px 42px 34px rgba(82, 67, 194, 0.295755);">
-                                    <div class="card-body p-4 text-start d-flex flex-wrap">
-                                        <h4 class="card-title mb-2 w-100" style="font-size: 2rem;font-weight: 600;">Pro</h4>
-                                        <p class="card-text mb-4 w-100" style="font-size: .875rem;">For beginner student that want to learn basic</p>
-                                        <div class="row align-items-center mb-3">
-                                            <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-white" style="font-size: 1rem;"></i>Access class in 30 days</div>
-                                            <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-white" style="font-size: 1rem;"></i>Facilitator</div>
-                                            <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-white" style="font-size: 1rem;"></i>Forum</div>
-                                            <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-white" style="font-size: 1rem;"></i>Merch</div>
-                                            <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-white" style="font-size: 1rem;"></i>Certificate</div>
-                                        </div>
-                                        <h4 style="font-size: 2.5rem;" class="mb-4">$20<span class="fs-6" style="color: #cecece;">/month</span></h4>
-                                        <button class="btn btn-primary btn-lg rounded-pill fs-6 col-12 mt-auto" style="background-color: #7677f1;border-color: #7677f1;">Select Plan</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-3 px-lg-0 mb-4">
-                                <div class="card h-100 border-0 bg-white" style="border-radius: 15px;">
-                                    <div class="card-body p-4 text-start d-flex flex-wrap">
-                                        <h4 class="card-title mb-2 w-100" style="font-size: 2rem;font-weight: 600;">Legend</h4>
-                                        <p class="card-text mb-4 w-100" style="font-size: .875rem;">For beginner student that want to learn basic</p>
-                                        <div class="row align-items-center mb-3">
-                                            <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Access class in 30 days</div>
-                                            <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Facilitator</div>
-                                            <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Forum</div>
-                                            <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Merch</div>
-                                            <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Certificate</div>
-                                            <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Networking</div>
-                                        </div>
-                                        <h4 style="font-size: 2.5rem;" class="mb-4">$25<span class="fs-6" style="color: #757575;">/month</span></h4>
-                                        <button class="btn btn-outline-primary btn-lg rounded-pill fs-6 col-12 mt-auto">Select Plan</button>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="table-responsive">
+                            <table class="table table-bordered pricing-table">
+                                <thead>
+                                    <tr class="plan-header">
+                                        <th class="bg-primary text-white">Features</th>
+                                        <th class="bg-primary text-white">Basic</th>
+                                        <th class="bg-primary text-white">Advance</th>
+                                        <th class="bg-primary text-white">Expert</th>
+                                        <th class="bg-primary text-white">Legends</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="bg-primary2">Prices</th>
+                                        <th class="plan-price bg-primary2">
+                                           $4.99<span>/month</span>
+                                        </th>
+                                        <th class="plan-price bg-primary2">
+                                            $9.99<span>/month</span>
+                                        </th>
+                                        <th class="plan-price bg-primary2">
+                                            $14.99<span>/month</span>
+                                        </th>
+                                        <th class="plan-price bg-primary2">
+                                            $24.99<span>/month</span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Access class in 30 days</td>
+                                        <td><i class="feature-check">&check;</i></td>
+                                        <td><i class="feature-check">&check;</i></td>
+                                        <td><i class="feature-check">&check;</i></td>
+                                        <td><i class="feature-check">&check;</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Learning Forum</td>
+                                        <td><i class="feature-check">&check;</i></td>
+                                        <td><i class="feature-check">&check;</i></td>
+                                        <td><i class="feature-check">&check;</i></td>
+                                        <td><i class="feature-check">&check;</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Certificate of Completion</td>
+                                        <td><i class="feature-cross">&times;</i></td>
+                                        <td><i class="feature-check">&check;</i></td>
+                                        <td><i class="feature-check">&check;</i></td>
+                                        <td><i class="feature-check">&check;</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Private Mentor</td>
+                                        <td><i class="feature-cross">&times;</i></td>
+                                        <td><i class="feature-cross">&times;</i></td>
+                                        <td><i class="feature-check">&check;</i></td>
+                                        <td><i class="feature-check">&check;</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Merchandise</td>
+                                        <td><i class="feature-cross">&times;</i></td>
+                                        <td><i class="feature-cross">&times;</i></td>
+                                        <td><i class="feature-cross">&times;</i></td>
+                                        <td><i class="feature-check">&check;</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Job Portal</td>
+                                        <td><i class="feature-cross">&times;</i></td>
+                                        <td><i class="feature-cross">&times;</i></td>
+                                        <td><i class="feature-cross">&times;</i></td>
+                                        <td><i class="feature-check">&check;</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><button class="btn btn-outline-primary btn-lg rounded-pill fs-6 w-100 m-auto">Select Plan</button></td>
+                                        <td><button class="btn btn-outline-primary btn-lg rounded-pill fs-6 w-100 m-auto">Select Plan</button></td>
+                                        <td><button class="btn btn-primary btn-lg rounded-pill fs-6 w-100 m-auto">Select Plan</button></td>
+                                        <td><button class="btn btn-outline-primary btn-lg rounded-pill fs-6 w-100 m-auto">Select Plan</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                         <div class="tab-pane fade active show" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                            <div class="row pt-2">
-                                <div class="col-12 col-sm-6 col-lg-3 px-lg-0 mb-4">
-                                    <div class="card h-100 border-0 bg-white" style="border-radius: 15px;">
-                                        <div class="card-body p-4 text-start d-flex flex-wrap">
-                                            <h4 class="card-title mb-2 w-100" style="font-size: 2rem;font-weight: 600;">
-                                                Beginner
-                                            </h4>
-                                            <p class="card-text mb-4 w-100" style="font-size: .875rem;">For beginner student that want to learn basic</p>
-                                            <div class="row align-items-center mb-3">
-                                                <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Access class in 30 days</div>
-                                                <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Facilitator</div>
-                                                <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Forum</div>
-                                            </div>
-                                            <h4 style="font-size: 2.5rem;" class="mb-4">$10<span class="fs-6" style="color: #757575;">/month</span></h4>
-                                            <button class="btn btn-outline-primary btn-lg rounded-pill fs-6 col-12 mt-auto">Select Plan</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-lg-3 px-lg-0 mb-4">
-                                    <div class="card h-100 border-0 bg-white" style="border-radius: 15px;">
-                                        <div class="card-body p-4 text-start d-flex flex-wrap">
-                                            <h4 class="card-title mb-2 w-100" style="font-size: 2rem;font-weight: 600;">Advanced</h4>
-                                            <p class="card-text mb-4 w-100" style="font-size: .875rem;">For beginner student that want to learn basic</p>
-                                            <div class="row align-items-center mb-3">
-                                                <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Access class in 30 days</div>
-                                                <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Facilitator</div>
-                                                <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Forum</div>
-                                                <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Merch</div>
-                                            </div>
-                                            <h4 style="font-size: 2.5rem;" class="mb-4">$15<span class="fs-6" style="color: #757575;">/month</span></h4>
-                                            <button class="btn btn-outline-primary btn-lg rounded-pill fs-6 col-12 mt-auto">Select Plan</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-lg-3 px-lg-0 mb-4">
-                                    <div class="card h-100 border-0 bg-primary text-white" style="border-radius: 15px;box-shadow: 0px 42px 34px rgba(82, 67, 194, 0.295755);">
-                                        <div class="card-body p-4 text-start d-flex flex-wrap">
-                                            <h4 class="card-title mb-2 w-100" style="font-size: 2rem;font-weight: 600;">Pro</h4>
-                                            <p class="card-text mb-4 w-100" style="font-size: .875rem;">For beginner student that want to learn basic</p>
-                                            <div class="row align-items-center mb-3">
-                                                <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-white" style="font-size: 1rem;"></i>Access class in 30 days</div>
-                                                <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-white" style="font-size: 1rem;"></i>Facilitator</div>
-                                                <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-white" style="font-size: 1rem;"></i>Forum</div>
-                                                <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-white" style="font-size: 1rem;"></i>Merch</div>
-                                                <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-white" style="font-size: 1rem;"></i>Certificate</div>
-                                            </div>
-                                            <h4 style="font-size: 2.5rem;" class="mb-4">$20<span class="fs-6" style="color: #cecece;">/month</span></h4>
-                                            <button class="btn btn-primary btn-lg rounded-pill fs-6 col-12 mt-auto" style="background-color: #7677f1;border-color: #7677f1;">Select Plan</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-lg-3 px-lg-0 mb-4">
-                                    <div class="card h-100 border-0 bg-white" style="border-radius: 15px;">
-                                        <div class="card-body p-4 text-start d-flex flex-wrap">
-                                            <h4 class="card-title mb-2 w-100" style="font-size: 2rem;font-weight: 600;">Legend</h4>
-                                            <p class="card-text mb-4 w-100" style="font-size: .875rem;">For beginner student that want to learn basic</p>
-                                            <div class="row align-items-center mb-3">
-                                                <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Access class in 30 days</div>
-                                                <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Facilitator</div>
-                                                <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Forum</div>
-                                                <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Merch</div>
-                                                <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Certificate</div>
-                                                <div class="d-flex align-items-center mb-2" style="font-size: .9rem;"><i class="fas fa-check-circle me-2 text-primary" style="font-size: 1rem;"></i>Networking</div>
-                                            </div>
-                                            <h4 style="font-size: 2.5rem;" class="mb-4">$25<span class="fs-6" style="color: #757575;">/month</span></h4>
-                                            <button class="btn btn-outline-primary btn-lg rounded-pill fs-6 col-12 mt-auto">Select Plan</button>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="table-responsive">
+                                <table class="table table-bordered pricing-table">
+                                    <thead>
+                                        <tr class="plan-header">
+                                            <th class="bg-primary text-white">Features</th>
+                                            <th class="bg-primary text-white">Basic</th>
+                                            <th class="bg-primary text-white">Advance</th>
+                                            <th class="bg-primary text-white">Expert</th>
+                                            <th class="bg-primary text-white">Legends</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg-primary2">Prices</th>
+                                            <th class="plan-price bg-primary2">
+                                               $54.99<span>/year</span>
+                                            </th>
+                                            <th class="plan-price bg-primary2">
+                                                $109.99<span>/year</span>
+                                            </th>
+                                            <th class="plan-price bg-primary2">
+                                                $169.99<span>/year</span>
+                                            </th>
+                                            <th class="plan-price bg-primary2">
+                                                $249.99<span>/year</span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Access class in 30 days</td>
+                                            <td><i class="feature-check">&check;</i></td>
+                                            <td><i class="feature-check">&check;</i></td>
+                                            <td><i class="feature-check">&check;</i></td>
+                                            <td><i class="feature-check">&check;</i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Learning Forum</td>
+                                            <td><i class="feature-check">&check;</i></td>
+                                            <td><i class="feature-check">&check;</i></td>
+                                            <td><i class="feature-check">&check;</i></td>
+                                            <td><i class="feature-check">&check;</i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Certificate of Completion</td>
+                                            <td><i class="feature-cross">&times;</i></td>
+                                            <td><i class="feature-check">&check;</i></td>
+                                            <td><i class="feature-check">&check;</i></td>
+                                            <td><i class="feature-check">&check;</i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Private Mentor</td>
+                                            <td><i class="feature-cross">&times;</i></td>
+                                            <td><i class="feature-cross">&times;</i></td>
+                                            <td><i class="feature-check">&check;</i></td>
+                                            <td><i class="feature-check">&check;</i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Merchandise</td>
+                                            <td><i class="feature-cross">&times;</i></td>
+                                            <td><i class="feature-cross">&times;</i></td>
+                                            <td><i class="feature-cross">&times;</i></td>
+                                            <td><i class="feature-check">&check;</i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Job Portal</td>
+                                            <td><i class="feature-cross">&times;</i></td>
+                                            <td><i class="feature-cross">&times;</i></td>
+                                            <td><i class="feature-cross">&times;</i></td>
+                                            <td><i class="feature-check">&check;</i></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><button class="btn btn-outline-primary btn-lg rounded-pill fs-6 w-100 m-auto">Select Plan</button></td>
+                                            <td><button class="btn btn-outline-primary btn-lg rounded-pill fs-6 w-100 m-auto">Select Plan</button></td>
+                                            <td><button class="btn btn-primary btn-lg rounded-pill fs-6 w-100 m-auto">Select Plan</button></td>
+                                            <td><button class="btn btn-outline-primary btn-lg rounded-pill fs-6 w-100 m-auto">Select Plan</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
