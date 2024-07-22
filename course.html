@@ -211,20 +211,20 @@
                 <div class="d-flex flex-wrap align-items-center mt-5">
                   <a
                     class="btn btn-light py-3 px-4 mb-3 me-2"
-                    href="#"
+                    href="#exploreCourses"
                     style="font-weight: 600"
                     >Explore Course</a
                   >
-                  <a
-                    class="link-light text-decoration-none d-flex align-items-center py-3 px-3 mb-3"
-                    href="#"
+                  <button
+                    class="btn btn-transparent link-light text-decoration-none d-flex align-items-center py-3 px-3 mb-3"
+                    data-bs-toggle="modal" data-bs-target="#videoModals"
                     ><img
                       src="assets/play-white.svg"
                       class="me-2"
                       height="40"
                       width="40"
                     /><strong> Watch Video </strong>
-                  </a>
+                </button>
                 </div>
               </div>
             </div>
@@ -255,20 +255,20 @@
                 <div class="d-flex flex-wrap align-items-center mt-5">
                   <a
                     class="btn btn-primary py-3 px-4 mb-3 me-2"
-                    href="#"
+                    href="#exploreCourses"
                     style="font-weight: 600"
                     >Explore Course</a
                   >
-                  <a
-                    class="link-primary text-decoration-none d-flex align-items-center py-3 px-3 mb-3"
-                    href="#"
+                  <button
+                    class="btn btn-transparent link-primary text-decoration-none d-flex align-items-center py-3 px-3 mb-3"
+                    data-bs-toggle="modal" data-bs-target="#videoModals"
                     ><img
                       src="assets/play.svg"
                       class="me-2"
                       height="40"
                       width="40"
                     /><strong> Watch Video </strong>
-                  </a>
+                </button>
                 </div>
               </div>
             </div>
@@ -276,6 +276,7 @@
         </div>
       </div>
     </div>
+    <span id="exploreCourses"></span>
     <div class="bg-light pt-3 pb-5 px-3 px-sm-0 col-12">
       <div class="container d-flex flex-wrap justify-content-center px-0">
         <div class="d-flex flex-wrap col-12">
@@ -1053,6 +1054,31 @@
           >
         </div>
       </div>
+    </div>
+
+    <div class="modal fade" id="videoModals" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Introduction Videos</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9">
+                    <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/pWOv9xcoMeY"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
+          </div>
+        </div>
     </div>
 
     <script src="vendor/bootstrap-5/js/bootstrap.min.js"></script>
