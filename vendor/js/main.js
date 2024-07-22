@@ -11,9 +11,9 @@ document.onreadystatechange = () => {
     const togglePlayButton = document.getElementById("music-toggle");
     const togglePlayIcon = document.getElementById("toggle-icon");
 
-    const testing = document.querySelectorAll('#playlist a')
-    if (testing) {
-      testing.forEach((test) => {
+    const playlist = document.querySelectorAll('#playlist a')
+    if (playlist) {
+      playlist.forEach((test) => {
           test.addEventListener("click", (e) => {
               e.preventDefault();
               document.querySelector("iframe").src = test.href
