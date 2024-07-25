@@ -5,6 +5,10 @@
     font-family: 'Poppins';
 }
 
+:root {
+    font-size: 16px;
+}
+
 i {
     font-size: 1.3rem;
 }
@@ -339,25 +343,11 @@ header {
     .width-xs-inherit {
         width: inherit;
     }
-}
-/* 
-.form-contact-us .form-label {
-    color: rgb(66, 63, 253);
-}
 
-.form-contact-us input, .form-contact-us textarea {
-    outline: none;
-    border: none;
-    box-shadow: 1px 1px 5px rgba(66, 63, 253, 0.2);
-    padding: 0.5rem;
-    border-radius: 5px;
-    width: 100%;
-    margin-bottom: 1rem;
+    :root {
+        font-size: 14.5px;
+    }
 }
-
-.form-contact-us .form-button {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-} */
 
 .form-contact-us .form-label {
     color: black;
@@ -396,54 +386,4 @@ header {
 
 #masonry-gallery-demo .col-sm-6, #masonry-gallery-demo .col-md-3 {
     padding: 5px;
-  }
-
-/* @media (min-width: 576px) {
-    .img-section {
-        width: 50%;
-    }
 }
-
-@media (min-width: 600px) {
-    .swiper-slide img {
-        width: 60%;
-    }
-}
-
-@media (min-width: 860px) {
-    .swiper-slide img {
-        width: 400px;
-    }
-}
-
-@media (min-width: 992px) {
-    .carousel-item::after {
-        content: "";
-        width: 600px;
-        height: 600px;
-        background: #333;
-        position: absolute;
-        top: -30%;
-        right: -10%;
-        border-radius: 100%;
-        z-index: 1;
-    }
-
-    .swiper-slide img {
-        width: 350px;
-    }
-
-    .swiper-button {
-        width: 50%;
-    }
-
-    .text-line::before {
-        left: 45%;
-        transform: translateX(-45%);
-        width: 20%;
-    }
-
-    .img-section {
-        width: 40%;
-    }
-} */
