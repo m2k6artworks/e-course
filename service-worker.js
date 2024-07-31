@@ -11,7 +11,7 @@ const urlToCache = [
     './icons/favicon-32x32.png',
     './icons/favicon.ico',
     './icons/logo-circle.png',
-    './assets/json/28861-connection-style-2.json',
+    './assets/offline-illustration.json',
     './offline.html'
 ];
 
