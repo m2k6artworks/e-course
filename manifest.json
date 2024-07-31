@@ -1,6 +1,6 @@
 {
-    "name": "E-Course",
-    "short_name": "E-Course",
+    "name": "Kyulearn",
+    "short_name": "Kyulearn",
     "description": "A platform for online courses",
     "start_url": "./index.html",
     "display": "standalone",
