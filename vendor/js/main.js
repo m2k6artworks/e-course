@@ -11,17 +11,8 @@ document.onreadystatechange = () => {
     const togglePlayButton = document.getElementById("music-toggle");
     const togglePlayIcon = document.getElementById("toggle-icon");
 
-    const playlist = document.querySelectorAll("#playlist a");
-    if (playlist) {
-      playlist.forEach((test) => {
-        test.addEventListener("click", (e) => {
-          e.preventDefault();
-          document.querySelector("iframe").src = test.href;
-        });
-      });
-    }
-
     if (togglePlayButton) {
+      togglePlayButton.click();
       togglePlayButton.addEventListener("click", function () {
         if (audio.paused) {
           audio.play();
@@ -32,6 +23,16 @@ document.onreadystatechange = () => {
           togglePlayIcon.classList.remove("fa-pause");
           togglePlayIcon.classList.add("fa-play");
         }
+      });
+    }
+
+    const playlist = document.querySelectorAll("#playlist a");
+    if (playlist) {
+      playlist.forEach((test) => {
+        test.addEventListener("click", (e) => {
+          e.preventDefault();
+          document.querySelector("iframe").src = test.href;
+        });
       });
     }
 
