@@ -1,4 +1,4 @@
-const CACHE_NAME = "javatechnic.xyz";
+const CACHE_NAME = "Kyulearn-v1";
 const urlToCache = [
     './icons/android-chrome-16x16.png',
     './icons/android-chrome-32x32.png',
